@@ -1,6 +1,6 @@
 # Paintbrush
 
-AI-powered website re-theming. One prompt, entire site styled, forever.
+Repaint any website! Sometimes breaks!
 
 ## Requirements
 

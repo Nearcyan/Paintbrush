@@ -5,7 +5,7 @@
   "description": "Retheme any website with AI - one prompt, perfect forever",
   "browser_specific_settings": {
     "gecko": {
-      "id": "paintbrush@anthropic.com"
+      "id": "paintbrush@paintbrush.lol"
     }
   },
   "icons": {
