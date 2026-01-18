@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Paintbrush",
+  "version": "1.5.0",
+  "description": "Retheme any website with AI - one prompt, perfect forever",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "lib/storage.js",
+        "lib/sounds.js",
+        "lib/prompter.js",
+        "lib/generator.js",
+        "content/analyzer.js",
+        "content/injector.js",
+        "content/ui.js",
+        "content/index.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "commands": {
+    "toggle_paintbrush": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+P",
+        "mac": "Command+Shift+P"
+      },
+      "description": "Toggle Paintbrush UI"
+    }
+  }
+}

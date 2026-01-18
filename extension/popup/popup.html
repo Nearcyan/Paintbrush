@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">
+        <div class="logo-icon"></div>
+        <h1>Paintbrush</h1>
+      </div>
+    </div>
+
+    <div class="current-site" id="current-site">
+      <div class="site-info">
+        <span class="site-hostname" id="site-hostname">-</span>
+        <span class="site-status" id="site-status"></span>
+      </div>
+      <button id="open-ui" class="btn btn-primary">
+        Open Paintbrush
+      </button>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="themes-section">
+      <h2>Your Themes</h2>
+      <div id="themes-list" class="themes-list">
+        <div class="loading">Loading...</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span class="hint" id="keybind-hint"></span>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
